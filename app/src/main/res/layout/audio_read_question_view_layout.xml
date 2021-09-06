@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/audio_read_question_bg"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <View
+        android:id="@+id/playView"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@drawable/audio_play_bg_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/playIv"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:background="@drawable/audio_read_question_play_btn_select"
+        app:layout_constraintBottom_toBottomOf="@+id/playView"
+        app:layout_constraintEnd_toEndOf="@+id/playView"
+        app:layout_constraintStart_toStartOf="@+id/playView"
+        app:layout_constraintTop_toTopOf="@+id/playView" />
+
+    <TextView
+        android:id="@+id/current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="00:00"
+        android:textColor="@color/color_B7B7C6"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.longfor.audioproject.audio.seekBar.AudioSeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="4dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:progressDrawable="@drawable/audio_read_question_seek_bar"
+        android:thumb="@drawable/audio_read_question_thumb"
+        android:thumbOffset="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/playView"
+        app:layout_constraintEnd_toStartOf="@+id/allTime"
+        app:layout_constraintStart_toEndOf="@+id/current_time"
+        app:layout_constraintTop_toTopOf="@+id/playView" />
+
+    <TextView
+        android:id="@+id/allTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/color_B7B7C6"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seekBar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="60:00" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AudioProject</string>
+    <string name="rePlay">播放</string>
+    <string name="pausePlay">暂停</string>
+</resources>
