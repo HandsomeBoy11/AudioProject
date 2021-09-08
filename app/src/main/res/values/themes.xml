@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.AudioProject" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.AudioProject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -13,4 +13,16 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="ActivityTransparent" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/color_00000000</item> <!-- 背景色透明度 -->
+        <item name="windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item><!-- 半透明,设置为false无透明效果 -->
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+    </style>
+
+
 </resources>

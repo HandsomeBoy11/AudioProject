@@ -1,8 +1,9 @@
 package com.longfor.audioproject
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.longfor.audioproject.audio.AudioPlayerUtil
 import com.longfor.audioproject.audio.PlayNativeAudioUtils
 import com.longfor.audioproject.audio.PlayNativeAudioUtils.FIRST_CASTLE_COMPLETE_AUDIO
@@ -38,6 +39,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn2.setOnClickListener(this)
         btn3.setOnClickListener(this)
         btn4.setOnClickListener(this)
+        btn5.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -76,6 +78,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     AudioPlayerUtil.play(bgUrl)
                     btn4.text = getString(R.string.pausePlay)
                 }
+            }
+            // 底部弹出录音
+            R.id.btn5 -> {
+                startActivity(Intent(this, AudioRecordActivity::class.java))
             }
 
         }

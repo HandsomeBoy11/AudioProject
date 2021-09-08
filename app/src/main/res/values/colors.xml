@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="color_B7B7C6">#B7B7C6</color>
+    <color name="color_00000000">#00000000</color>
+    <color name="color_A1A1B3">#A1A1B3</color>
+    <color name="color_FF5F2E">#FF5F2E</color>
+    <color name="color_6612121A">#6612121A</color><!--40%不透明度-->
+
 </resources>

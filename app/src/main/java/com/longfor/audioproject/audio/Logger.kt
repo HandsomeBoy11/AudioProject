@@ -24,7 +24,7 @@ object Logger {
         Log.e(Tag, msg + ext)
     }
 
-    fun e(e: Exception, msg: String, ext: String = "") {
+    fun e(e: Throwable, msg: String, ext: String = "") {
         Log.e(Tag, "$e $msg $ext")
     }
 }

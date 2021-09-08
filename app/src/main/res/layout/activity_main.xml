@@ -64,6 +64,12 @@
         android:layout_height="wrap_content"
         android:text="播放网络音频" />
 
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="录制音频" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -80,5 +86,6 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="10dp" />
+
 
 </LinearLayout>

@@ -3,14 +3,14 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-android-extensions'
 }
-
+apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.longfor.audioproject"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -48,4 +48,13 @@ dependencies {
     api "io.reactivex.rxjava2:rxandroid:$rxjava_version"
     api "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$rxjava_adapter_version"
     api "io.reactivex.rxjava2:rxkotlin:2.3.0"
+
+    // Glide okHttp
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+    api "com.github.bumptech.glide:okhttp3-integration:$glide_version"
+    api "com.github.bumptech.glide:glide:$glide_version"
+
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.14'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
 }

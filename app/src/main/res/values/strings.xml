@@ -2,4 +2,6 @@
     <string name="app_name">AudioProject</string>
     <string name="rePlay">播放</string>
     <string name="pausePlay">暂停</string>
+    <string name="picture_video_error">图片错误</string>
+    <string name="picture_audio_error">图片错误</string>
 </resources>

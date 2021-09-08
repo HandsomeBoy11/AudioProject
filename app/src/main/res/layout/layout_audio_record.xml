@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.longfor.audioproject.audio.audioView.AudioRecordView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_audio_record"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_00000000">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_rerecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="iv_rerecord,tv_rerecord_tip" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="iv_complete,tv_complete_tip" />
+
+    <!--<com.dedao.libwidget.anim.IGCLottieView
+        android:id="@+id/lav_image_recording_left_anim"
+        android:layout_width="36dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_audio_action"
+        app:layout_constraintEnd_toStartOf="@+id/iv_audio_action"
+        app:layout_constraintTop_toTopOf="@+id/iv_audio_action"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/pra_audio_recording_left" />
+
+    <com.dedao.libwidget.anim.IGCLottieView
+        android:id="@+id/lav_image_recording_right_anim"
+        android:layout_width="36dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_audio_action"
+        app:layout_constraintStart_toEndOf="@+id/iv_audio_action"
+        app:layout_constraintTop_toTopOf="@+id/iv_audio_action"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/pra_audio_recording_right" />-->
+
+    <ImageView
+        android:id="@+id/iv_audio_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pra_icon_start_big_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_record_time" />
+
+    <ImageView
+        android:id="@+id/iv_rerecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pra_icon_again"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_audio_action"
+        app:layout_constraintEnd_toStartOf="@+id/iv_audio_action"
+        app:layout_constraintTop_toTopOf="@+id/iv_audio_action" />
+
+    <ImageView
+        android:id="@+id/iv_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pra_icon_confirm"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_audio_action"
+        app:layout_constraintStart_toEndOf="@+id/iv_audio_action"
+        app:layout_constraintTop_toTopOf="@+id/iv_audio_action" />
+
+    <ImageView
+        android:id="@+id/iv_audio_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pra_icon_sheet_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_rerecord_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="重录"
+        android:textColor="@color/color_A1A1B3"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_rerecord"
+        app:layout_constraintStart_toStartOf="@+id/iv_rerecord"
+        app:layout_constraintTop_toBottomOf="@+id/iv_rerecord"
+        android:textStyle="bold"
+        tools:text="重录" />
+
+    <TextView
+        android:id="@+id/tv_complete_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="完成"
+        android:textColor="@color/color_A1A1B3"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_complete"
+        app:layout_constraintStart_toStartOf="@+id/iv_complete"
+        app:layout_constraintTop_toBottomOf="@+id/iv_complete"
+        android:textStyle="bold"
+        tools:text="完成" />
+
+    <TextView
+        android:id="@+id/tv_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="74dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/color_FF5F2E"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        tools:text="30/300" />
+
+    <TextView
+        android:id="@+id/tv_record_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/color_A1A1B3"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_audio_action"
+        android:textStyle="bold"
+        tools:text="点击结束录音" />
+
+</com.longfor.audioproject.audio.audioView.AudioRecordView>
