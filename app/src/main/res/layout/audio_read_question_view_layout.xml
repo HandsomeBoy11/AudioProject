@@ -40,7 +40,7 @@
         app:layout_constraintStart_toEndOf="@+id/playView"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.longfor.audioproject.audio.seekBar.AudioSeekBar
+    <com.wj.audioproject.audio.seekBar.AudioSeekBar
         android:id="@+id/seekBar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

@@ -81,7 +81,7 @@
         android:layout_height="wrap_content"
         android:text="播放网络音频" />-->
 
-    <com.longfor.audioproject.audio.seekBar.AudioReadQuestionView
+    <com.wj.audioproject.audio.seekBar.AudioReadQuestionView
         android:id="@+id/audioReadQuestionView"
         android:layout_width="match_parent"
         android:layout_height="60dp"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.longfor.audioproject.audio.audioView.AudioRecordView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.wj.audioproject.audio.audioView.AudioRecordView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cl_audio_record"
@@ -156,4 +156,4 @@
         android:textStyle="bold"
         tools:text="点击结束录音" />
 
-</com.longfor.audioproject.audio.audioView.AudioRecordView>
+</com.wj.audioproject.audio.audioView.AudioRecordView>
